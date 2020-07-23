@@ -1,6 +1,6 @@
 @echo off
 ECHO Aguarde conversão de arquivos.
-ConsoleApplication2.exe rec1_.ply rec2_.ply
+ConsoleApplication2.exe 0 rec1_.ply rec2_.ply
 del nvm1_tmp.ply
 del nvm2_tmp.ply
 del nvm3_tmp.ply
@@ -10,6 +10,7 @@ del nvm1.xyz
 del nvm2.xyz
 del nvm3.xyz
 ECHO Resultados prontos!
+ConsoleApplication2.exe 1 result.xyz
 cls
 call rake
 pause
